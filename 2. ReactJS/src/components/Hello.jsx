@@ -1,9 +1,5 @@
-import React from 'react';
+import React from "react";
 
-const Hello = () => (
-    <div>
-        Hola que tal
-    </div>
-);
+const Hello = props => <h1>{props.title}</h1>;
 
 export default Hello;
