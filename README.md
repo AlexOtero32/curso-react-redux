@@ -35,8 +35,6 @@ En este apartado vamos a crear nuestro primer proyecto en React, con el que apre
 - Aplicar estilos. [MaterializeCSS](https://materializecss.com/)
 - Hooks
 
-Para obtener esto, vamos a ayudarnos de [create-react-app](https://github.com/facebook/create-react-app). CRA es un _boilerplate_ o plantilla que ofrece Facebook para implementar aplicaciones en React sin la necesidad de instalar ni configurar manualmente todas las herramientas como [webpack](https://webpack.js.org/) o [babeljs](https://babeljs.io/).
-
 ### 3. React y Redux
 
 [Redux](https://redux.js.org/) es una librería que ofrece un contenedor predecible de estado, para aplicaciones JavaScript. Proporciona un sistema de control que simplifica el desarrollo de aplicaciones en las que la cantidad de funcionalidades puede hacer que el manejo del estado sea confuso, haciendo que el código pueda ser difícil de leer, y afecte al futuro mantenimiento del código.
@@ -50,6 +48,8 @@ El flujo de trabajo de Redux puede ser complicado de entender al principio, por 
 - Reducer
 - mapStateToProps y mapDispatchToProps
 - Redux devtools
+
+Para obtener esto, vamos a ayudarnos de [create-react-app](https://github.com/facebook/create-react-app). CRA es un _boilerplate_ o plantilla que ofrece Facebook para implementar aplicaciones en React sin la necesidad de instalar ni configurar manualmente todas las herramientas como [webpack](https://webpack.js.org/) o [babeljs](https://babeljs.io/).
 
 ### 4. Redux vs Context API
 
