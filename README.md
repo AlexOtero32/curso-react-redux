@@ -49,8 +49,6 @@ El flujo de trabajo de Redux puede ser complicado de entender al principio, por 
 - mapStateToProps y mapDispatchToProps
 - Redux devtools
 
-Para obtener esto, vamos a ayudarnos de [create-react-app](https://github.com/facebook/create-react-app). CRA es un _boilerplate_ o plantilla que ofrece Facebook para implementar aplicaciones en React sin la necesidad de instalar ni configurar manualmente todas las herramientas como [webpack](https://webpack.js.org/) o [babeljs](https://babeljs.io/).
-
 ### 4. Redux vs Context API
 
 Desde la versión 16.3.0 de React, se ha introducido una nueva funcionalidad llamada Context. Esto es un sistema para pasar datos a través del árbol de componentes sin la necesidad de pasar _props_ manualmente en cada nivel. En este sentido, _Context_ puede ser similar a _Redux_, sin embargo en este apartado aprenderemos con una aplicación muy sencilla las ventajas e inconvenientes de utilizar cada uno de estos sistemas.
@@ -61,11 +59,12 @@ En este último apartado vamos a crear una SPA con todos los conocimientos de Re
 
 Una SPA es una aplicación web que dinámicamente redirige al usuario en el navegador, sin la necesidad de recargar desde el servidor cada vez que el usuario intenta acceder a una página.
 
+Para obtener esto, vamos a ayudarnos de [create-react-app](https://github.com/facebook/create-react-app). CRA es un _boilerplate_ o plantilla que ofrece Facebook para implementar aplicaciones en React sin la necesidad de instalar ni configurar manualmente todas las herramientas como [webpack](https://webpack.js.org/) o [babeljs](https://babeljs.io/).
+
 En este apartado aprenderemos los siguientes conceptos:
 
-- Ayudas de desarrollo con prettier y eslint
-- Implementación de rutas
+- Librerías de componentes: [Material UI](https://material-ui.com/)
+- Implementación de rutas. react-router-dom
 - Formularios en redux
 - Axios
 - Acciones asíncronas en redux
-- Implementar un backend de pruebas con json-server

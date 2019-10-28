@@ -1,12 +1,17 @@
 import React from "react";
-import Hello from "./components/Hello.jsx";
+import Listado from "./components/Listado.jsx";
+import Item from "./components/Item.jsx";
 
 const App = () => {
   return (
-    <React.Fragment>
-      <Hello title="Hola que tal"/>
-      <p>asasdd</p>
-    </React.Fragment>
+    <>
+      <h1>Tareas</h1>
+      <Listado>
+        <Item title="Ir a la compra"/>
+        <Item title="Aprender React"/>
+        <Item title="Poner la lavadora"/>
+      </Listado>
+    </>
   );
 };
 
