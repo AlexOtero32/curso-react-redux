@@ -22,12 +22,14 @@ class Item extends Component {
     return (
       <li>
         {
+          /* Renderizamos condicionalmente */
           completada ? (
             <strike>{title}</strike>
           ) : (
             <>{title}</>
           )
         }
+        {/* Esto es un componente controlado */}
         <input type="checkbox" checked={completada} onChange={this.onClick}/>
       </li>
     );
