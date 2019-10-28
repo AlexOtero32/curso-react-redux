@@ -1,25 +1,39 @@
 import React from "react";
+import "@babel/polyfill";
+
 import Listado from "./components/Listado.jsx";
 import Item from "./components/Item.jsx";
 
-const datos = [
-  { id: 1, title: "Ir a la compra" },
-  { id: 2, title: "Aprender React" },
-  { id: 3, title: "Poner la lavadora" },
-  { id: 4, title: "Poner la lavadora" }
-];
+class App extends React.Component {
 
-const App = () => {
-  return (
-    <>
-      <h1>Tareas</h1>
-      <Listado>
-        {datos.map(({ title, id }) =>
-          <Item title={title} key={id}/>
-        )}
-      </Listado>
-    </>
-  );
-};
+  state = {
+    tareas: []
+  };
+
+  async componentDidMount() {
+    const response = await fetch("http://localhost:3000/tareas");
+
+    const tareas = await response.json();
+
+    this.setState({
+      tareas
+    });
+  }
+
+  render() {
+    const { tareas } = this.state;
+
+    return (
+      <>
+        <h1>Tareas</h1>
+        <Listado>
+          {tareas.map(tarea =>
+            <Item title={tarea.title} completada={tarea.completada} key={tarea.id}/>
+          )}
+        </Listado>
+      </>
+    );
+  }
+}
 
 export default App;

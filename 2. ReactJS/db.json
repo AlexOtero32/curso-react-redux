@@ -1,0 +1,24 @@
+{
+  "tareas": [
+    {
+      "id": 1,
+      "title": "Aprender React",
+      "completada": true
+    },
+    {
+      "id": 2,
+      "title": "Aprender Redux",
+      "completada": false
+    },
+    {
+      "id": 3,
+      "title": "Refactorizar con Redux",
+      "completada": true
+    },
+    {
+      "id": 4,
+      "title": "Aprender hooks",
+      "completada": false
+    }
+  ]
+}

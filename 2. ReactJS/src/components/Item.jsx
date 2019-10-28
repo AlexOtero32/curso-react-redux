@@ -6,7 +6,7 @@ class Item extends Component {
     super(props);
 
     this.state = {
-      completada: true
+      completada: props.completada
     };
   }
 
@@ -24,7 +24,7 @@ class Item extends Component {
         {
           /* Renderizamos condicionalmente */
           completada ? (
-            <strike>{title}</strike>
+            <del>{title}</del>
           ) : (
             <>{title}</>
           )
