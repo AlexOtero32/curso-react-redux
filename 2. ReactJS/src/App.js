@@ -2,7 +2,6 @@ import React from "react";
 import "@babel/polyfill";
 
 import Listado from "./components/Listado.jsx";
-import Item from "./components/Item.jsx";
 
 class App extends React.Component {
 
@@ -26,11 +25,7 @@ class App extends React.Component {
     return (
       <>
         <h1>Tareas</h1>
-        <Listado>
-          {tareas.map(tarea =>
-            <Item title={tarea.title} completada={tarea.completada} key={tarea.id}/>
-          )}
-        </Listado>
+        <Listado tareas={tareas}/>
       </>
     );
   }
